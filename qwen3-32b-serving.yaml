@@ -31,7 +31,7 @@ spec:
         args:
         - "vllm"
         - "serve"
-        - "Qwen/Qwen3-32B-Instruct"
+        - "Qwen/Qwen2.5-32B-Instruct"
         - "--tensor-parallel-size"
         - "8"
         - "--dtype"

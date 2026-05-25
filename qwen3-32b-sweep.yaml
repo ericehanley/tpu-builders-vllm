@@ -31,9 +31,9 @@ spec:
         command: ["vllm", "bench", "sweep", "serve"]
         args:
         - "--serve-cmd"
-        - "vllm serve Qwen/Qwen3-32B-Instruct --tensor-parallel-size 8 --dtype bfloat16 --host 0.0.0.0 --port 8000 --trust-remote-code"
+        - "vllm serve Qwen/Qwen2.5-32B-Instruct --tensor-parallel-size 8 --dtype bfloat16 --host 0.0.0.0 --port 8000 --trust-remote-code"
         - "--bench-cmd"
-        - "vllm bench serve --model Qwen/Qwen3-32B-Instruct --backend vllm --endpoint /v1/completions"
+        - "vllm bench serve --model Qwen/Qwen2.5-32B-Instruct --backend vllm --endpoint /v1/completions"
         - "--serve-params"
         - "/benchmarks-config/serve_hparams.json"
         - "--bench-params"
