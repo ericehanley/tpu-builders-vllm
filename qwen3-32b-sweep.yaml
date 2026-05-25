@@ -42,6 +42,8 @@ spec:
         - "/tmp/results"
         - "--experiment-name"
         - "qwen3-v6e-sweep"
+        - "--after-bench-cmd"
+        - "true"
         env:
         - name: HF_HOME
           value: /hf-cache
