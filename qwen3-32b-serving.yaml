@@ -6,6 +6,8 @@ metadata:
     app: qwen3-32b
 spec:
   replicas: 1
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: qwen3-32b
