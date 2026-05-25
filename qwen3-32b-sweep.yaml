@@ -25,7 +25,7 @@ spec:
         effect: "NoSchedule"
       containers:
       - name: vllm-server
-        image: vllm/vllm-tpu:nightly-20260512-cae31c8-a51376b
+        image: vllm/vllm-tpu
         command: ["vllm", "bench", "sweep", "serve"]
         args:
         - "--serve-cmd"
@@ -48,10 +48,6 @@ spec:
               key: HF_TOKEN
         - name: HF_HOME
           value: /hf-cache
-        - name: USE_BATCHED_RPA_KERNEL
-          value: "1"
-        - name: VLLM_ENGINE_READY_TIMEOUT_S
-          value: "1200"
         resources:
           limits:
             google.com/tpu: "8"
@@ -60,10 +56,15 @@ spec:
         volumeMounts:
         - name: hf-cache
           mountPath: /hf-cache
+        - name: sweep-config
+          mountPath: /workspace
       volumes:
       - name: hf-cache
         emptyDir:
           medium: Memory
+      - name: sweep-config
+        configMap:
+          name: vllm-sweep-config
 ---
 apiVersion: v1
 kind: Service
