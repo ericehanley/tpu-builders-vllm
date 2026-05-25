@@ -15,7 +15,7 @@ spec:
         app: qwen3-32b
     spec:
       nodeSelector:
-        cloud.google.com/gke-nodepool: tpu-v6e-pool
+        cloud.google.com/gke-nodepool: tpu-v6e-flex-pool
         cloud.google.com/gke-tpu-accelerator: tpu-v6e-slice
         cloud.google.com/gke-tpu-topology: 2x4
       tolerations:
@@ -25,7 +25,7 @@ spec:
         effect: "NoSchedule"
       containers:
       - name: vllm-server
-        image: vllm/vllm-tpu:nightly-20260512-cae31c8-a51376b
+        image: vllm/vllm-tpu
         args:
         - "vllm"
         - "serve"
@@ -52,10 +52,6 @@ spec:
               key: HF_TOKEN
         - name: HF_HOME
           value: /hf-cache
-        - name: USE_BATCHED_RPA_KERNEL
-          value: "1"
-        - name: VLLM_ENGINE_READY_TIMEOUT_S
-          value: "1200"
         resources:
           limits:
             google.com/tpu: "8"

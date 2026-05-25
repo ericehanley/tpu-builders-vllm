@@ -15,7 +15,7 @@ spec:
         app: qwen3-32b
     spec:
       nodeSelector:
-        cloud.google.com/gke-nodepool: tpu-v6e-pool
+        cloud.google.com/gke-nodepool: tpu-v6e-flex-pool
         cloud.google.com/gke-tpu-accelerator: tpu-v6e-slice
         cloud.google.com/gke-tpu-topology: 2x4
       tolerations:
@@ -56,15 +56,10 @@ spec:
         volumeMounts:
         - name: hf-cache
           mountPath: /hf-cache
-        - name: sweep-config
-          mountPath: /workspace
       volumes:
       - name: hf-cache
         emptyDir:
           medium: Memory
-      - name: sweep-config
-        configMap:
-          name: vllm-sweep-config
 ---
 apiVersion: v1
 kind: Service
