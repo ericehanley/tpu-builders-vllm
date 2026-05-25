@@ -35,9 +35,9 @@ spec:
         - "--bench-cmd"
         - "vllm bench serve --model Qwen/Qwen3-32B-Instruct --backend vllm --endpoint /v1/completions"
         - "--serve-params"
-        - "/workspace/serve_hparams.json"
+        - "/benchmarks-config/serve_hparams.json"
         - "--bench-params"
-        - "/workspace/bench_hparams.json"
+        - "/benchmarks-config/bench_hparams.json"
         - "--output-dir"
         - "/tmp/results"
         - "--experiment-name"
@@ -53,10 +53,15 @@ spec:
         volumeMounts:
         - name: hf-cache
           mountPath: /hf-cache
+        - name: sweep-config
+          mountPath: /benchmarks-config
       volumes:
       - name: hf-cache
         emptyDir:
           medium: Memory
+      - name: sweep-config
+        configMap:
+          name: vllm-sweep-config
 ---
 apiVersion: v1
 kind: Service
