@@ -44,6 +44,8 @@ spec:
         - "qwen3-v6e-sweep"
         - "--after-bench-cmd"
         - "true"
+        - "--server-ready-timeout"
+        - "1200"
         env:
         - name: HF_HOME
           value: /hf-cache
