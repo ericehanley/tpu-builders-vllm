@@ -47,11 +47,6 @@ spec:
         - "8000"
         - "--trust-remote-code"
         env:
-        - name: HF_TOKEN
-          valueFrom:
-            secretKeyRef:
-              name: hf-token
-              key: HF_TOKEN
         - name: HF_HOME
           value: /hf-cache
         resources:

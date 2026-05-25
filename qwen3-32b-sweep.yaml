@@ -43,11 +43,6 @@ spec:
         - "--experiment-name"
         - "qwen3-v6e-sweep"
         env:
-        - name: HF_TOKEN
-          valueFrom:
-            secretKeyRef:
-              name: hf-token
-              key: HF_TOKEN
         - name: HF_HOME
           value: /hf-cache
         resources:
