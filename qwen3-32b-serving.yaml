@@ -31,7 +31,7 @@ spec:
         args:
         - "vllm"
         - "serve"
-        - "NousResearch/Meta-Llama-3-8B-Instruct"
+        - "Qwen/Qwen3-32B"
         - "--tensor-parallel-size"
         - "8"
         - "--dtype"
