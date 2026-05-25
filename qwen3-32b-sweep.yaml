@@ -1,0 +1,81 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qwen3-32b-deployment
+  labels:
+    app: qwen3-32b
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: qwen3-32b
+  template:
+    metadata:
+      labels:
+        app: qwen3-32b
+    spec:
+      nodeSelector:
+        cloud.google.com/gke-nodepool: tpu-v6e-pool
+        cloud.google.com/gke-tpu-accelerator: tpu-v6e-slice
+        cloud.google.com/gke-tpu-topology: 2x4
+      tolerations:
+      - key: "google.com/tpu"
+        operator: "Equal"
+        value: "present"
+        effect: "NoSchedule"
+      containers:
+      - name: vllm-server
+        image: vllm/vllm-tpu:nightly-20260512-cae31c8-a51376b
+        command: ["vllm", "bench", "sweep", "serve"]
+        args:
+        - "--serve-cmd"
+        - "vllm serve Qwen/Qwen3-32B-Instruct --tensor-parallel-size 8 --dtype bfloat16 --host 0.0.0.0 --port 8000 --trust-remote-code"
+        - "--bench-cmd"
+        - "vllm bench serve --model Qwen/Qwen3-32B-Instruct --backend vllm --endpoint /v1/completions"
+        - "--serve-params"
+        - "/workspace/serve_hparams.json"
+        - "--bench-params"
+        - "/workspace/bench_hparams.json"
+        - "--output-dir"
+        - "/tmp/results"
+        - "--experiment-name"
+        - "qwen3-v6e-sweep"
+        env:
+        - name: HF_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: hf-token
+              key: HF_TOKEN
+        - name: HF_HOME
+          value: /hf-cache
+        - name: USE_BATCHED_RPA_KERNEL
+          value: "1"
+        - name: VLLM_ENGINE_READY_TIMEOUT_S
+          value: "1200"
+        resources:
+          limits:
+            google.com/tpu: "8"
+          requests:
+            google.com/tpu: "8"
+        volumeMounts:
+        - name: hf-cache
+          mountPath: /hf-cache
+      volumes:
+      - name: hf-cache
+        emptyDir:
+          medium: Memory
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: qwen3-32b-service
+  labels:
+    app: qwen3-32b
+spec:
+  ports:
+  - name: http
+    port: 8000
+    targetPort: 8000
+  selector:
+    app: qwen3-32b
+  type: ClusterIP
