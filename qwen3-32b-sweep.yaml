@@ -59,6 +59,8 @@ spec:
           mountPath: /hf-cache
         - name: sweep-config
           mountPath: /benchmarks-config
+        - name: results-volume
+          mountPath: /tmp/results
       volumes:
       - name: hf-cache
         emptyDir:
@@ -66,6 +68,8 @@ spec:
       - name: sweep-config
         configMap:
           name: vllm-sweep-config
+      - name: results-volume
+        emptyDir: {}
 ---
 apiVersion: v1
 kind: Service
