@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # create_gke_tpu_cluster.sh
 # This script creates a custom VPC network, custom subnet (with auto-allocated secondary IP ranges),
-# internal firewall rules, a standard GKE regional cluster, and a single-host TPU v6e (Trillium) on-demand node pool.
+# internal firewall rules, a standard GKE regional cluster, and a single-host TPU v6e (Trillium) Flex-start node pool.
 
 set -euo pipefail
 
@@ -11,10 +11,9 @@ set -euo pipefail
 PROJECT_ID="diesel-patrol-382622"
 CLUSTER_NAME="tpu-builders-vllm-demo"
 REGION="us-central1"
-ZONE="us-central1-c"
+ZONE="us-central1-a"
 TPU_MACHINE_TYPE="ct6e-standard-8t"
-NODE_POOL_NAME="tpu-v6e-pool"
-NUM_NODES=1
+NODE_POOL_NAME="tpu-v6e-flex-pool"
 
 # Networking parameters
 NETWORK_NAME="vllm-tpu-vpc"
@@ -84,7 +83,7 @@ else
 fi
 
 echo "=============================================================================="
-echo "5. Ensuring Single-Host TPU v6e (Trillium) Node Pool exists: ${NODE_POOL_NAME}"
+echo "5. Ensuring Single-Host TPU v6e (Trillium) Flex-start Node Pool exists: ${NODE_POOL_NAME}"
 echo "=============================================================================="
 if ! gcloud container node-pools describe "${NODE_POOL_NAME}" --project="${PROJECT_ID}" --cluster="${CLUSTER_NAME}" --location="${REGION}" &>/dev/null; then
     gcloud container node-pools create "${NODE_POOL_NAME}" \
@@ -93,14 +92,18 @@ if ! gcloud container node-pools describe "${NODE_POOL_NAME}" --project="${PROJE
         --location="${REGION}" \
         --node-locations="${ZONE}" \
         --machine-type="${TPU_MACHINE_TYPE}" \
-        --num-nodes="${NUM_NODES}" \
-        --reservation-affinity=none
-    echo "Successfully created single-host TPU v6e node pool: ${NODE_POOL_NAME}"
+        --num-nodes=0 \
+        --enable-autoscaling \
+        --min-nodes=0 \
+        --max-nodes=1 \
+        --reservation-affinity=none \
+        --flex-start
+    echo "Successfully created single-host TPU v6e Flex-start node pool: ${NODE_POOL_NAME}"
 else
-    echo "TPU v6e node pool ${NODE_POOL_NAME} already exists."
+    echo "TPU v6e Flex-start node pool ${NODE_POOL_NAME} already exists."
 fi
 
 echo "=============================================================================="
-echo "Network, Firewall, Cluster, and TPU node pool verification complete!"
+echo "Network, Firewall, Cluster, and TPU Flex-start node pool verification complete!"
 echo "Verify ready nodes using: kubectl get nodes -o wide"
 echo "=============================================================================="

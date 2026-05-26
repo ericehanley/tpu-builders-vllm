@@ -1,0 +1,630 @@
+ERROR 05-26 01:00:25 [tpu_info.py:40] Unable to poll TPU GCE Metadata. Got status code: 404 and content: Not Found
+ERROR 05-26 01:00:25 [tpu_info.py:40] 
+INFO 05-26 01:00:25 [__init__.py:59] TPU info: node_name=None | tpu_type=v6e-8 | worker_id=0 | num_chips=8 | num_cores_per_chip=1
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+INFO 05-26 01:00:30 [tpu_platform.py:152] Automatically using fp8_e5m2 for FP8 KV cache on TPU v6e.
+WARNING 05-26 01:00:31 [tpu_platform.py:329] Pin memory is not supported on TPU.
+INFO 05-26 01:00:31 [attention_interface.py:53] Using default RPA kernel
+INFO 05-26 01:00:31 [importing.py:44] Triton is installed but 0 active driver(s) found (expected 1). Disabling Triton to prevent runtime errors.
+INFO 05-26 01:00:31 [importing.py:68] Triton not installed or not compatible; certain GPU-related functions will not be available.
+WARNING 05-26 01:00:31 [interface.py:243] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+INFO 05-26 01:00:31 [tpu_platform.py:152] Automatically using fp8_e5m2 for FP8 KV cache on TPU v6e.
+INFO 05-26 01:00:31 [tpu_platform.py:152] Automatically using fp8_e5m2 for FP8 KV cache on TPU v6e.
+INFO 05-26 01:00:31 [tpu_platform.py:152] Automatically using fp8_e5m2 for FP8 KV cache on TPU v6e.
+INFO 05-26 01:00:31 [tpu_platform.py:152] Automatically using fp8_e5m2 for FP8 KV cache on TPU v6e.
+WARNING 05-26 01:00:31 [interface.py:243] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 05-26 01:00:31 [interface.py:243] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 05-26 01:00:31 [interface.py:243] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+INFO 05-26 01:00:31 [tpu_platform.py:152] Automatically using fp8_e5m2 for FP8 KV cache on TPU v6e.
+INFO 05-26 01:00:31 [tpu_platform.py:152] Automatically using fp8_e5m2 for FP8 KV cache on TPU v6e.
+INFO 05-26 01:00:31 [tpu_platform.py:152] Automatically using fp8_e5m2 for FP8 KV cache on TPU v6e.
+INFO 05-26 01:00:31 [nixl_utils.py:20] Setting UCX_RCACHE_MAX_UNRELEASED to '1024' to avoid a rare memory leak in UCX when using NIXL.
+INFO 05-26 01:00:31 [nixl_utils.py:32] NIXL is available
+INFO 05-26 01:00:31 [__init__.py:110] Registered model loader `<class 'tpu_inference.models.jax.utils.weight_utils.JaxDummyModelLoader'>` with load format `jax_dummy`
+INFO 05-26 01:00:31 [__init__.py:110] Registered model loader `<class 'tpu_inference.models.common.pathways_dummy_loader.PathwaysDummyModelLoader'>` with load format `pathways_dummy`
+WARNING 05-26 01:00:31 [__init__.py:87] The quantization method 'awq' already exists and will be overwritten by the quantization config <class 'tpu_inference.layers.vllm.quantization.awq.VllmAWQConfig'>.
+WARNING 05-26 01:00:32 [__init__.py:87] The quantization method 'compressed-tensors' already exists and will be overwritten by the quantization config <class 'tpu_inference.layers.vllm.quantization.compressed_tensors.compressed_tensors.VllmCompressedTensorsConfig'>.
+WARNING 05-26 01:00:32 [__init__.py:87] The quantization method 'fp8' already exists and will be overwritten by the quantization config <class 'tpu_inference.layers.vllm.quantization.fp8.VllmFp8Config'>.
+WARNING 05-26 01:00:32 [__init__.py:87] The quantization method 'gpt_oss_mxfp4' already exists and will be overwritten by the quantization config <class 'tpu_inference.layers.vllm.quantization.mxfp4.VllmMxfp4Config'>.
+INFO 05-26 01:00:32 [__init__.py:110] Registered model loader `<class 'tpu_inference.models.vllm.vllm_model_loader.IncrementalModelLoader'>` with load format `tpu_streaming_loader`
+WARNING 05-26 01:00:32 [__init__.py:99] Load format `runai_streamer` is already registered, and will be overwritten by the new loader class `<class 'tpu_inference.models.vllm.vllm_model_loader.RunaiIncrementalModelLoader'>`.
+INFO 05-26 01:00:32 [__init__.py:110] Registered model loader `<class 'tpu_inference.models.vllm.vllm_model_loader.RunaiIncrementalModelLoader'>` with load format `runai_streamer`
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(APIServer pid=265) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(EngineCore pid=791) WARNING:root:Duplicate op registration for aten.__and__
+(EngineCore pid=791) Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+(EngineCore pid=791) Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:04<01:15,  4.71s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:11<01:26,  5.75s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:17<01:24,  6.04s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:24<01:20,  6.22s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:30<01:15,  6.28s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:37<01:10,  6.43s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:43<01:05,  6.52s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:50<00:58,  6.48s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:56<00:52,  6.53s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  59% Completed | 10/17 [01:03<00:45,  6.46s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  65% Completed | 11/17 [01:09<00:38,  6.45s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  71% Completed | 12/17 [01:16<00:32,  6.50s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  76% Completed | 13/17 [01:22<00:26,  6.55s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  82% Completed | 14/17 [01:29<00:19,  6.59s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  88% Completed | 15/17 [01:36<00:13,  6.62s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards:  94% Completed | 16/17 [01:43<00:06,  6.71s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:47<00:00,  5.98s/it]
+(EngineCore pid=791) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:47<00:00,  6.32s/it]
+(EngineCore pid=791) 
+(EngineCore pid=791) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=791) WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(APIServer pid=265) INFO:     Started server process [265]
+(APIServer pid=265) INFO:     Waiting for application startup.
+(APIServer pid=265) INFO:     Application startup complete.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:02<04:05,  2.48s/it]  4%|▍         | 4/100 [00:02<00:48,  1.99it/s]  8%|▊         | 8/100 [00:02<00:21,  4.29it/s] 10%|█         | 10/100 [00:03<00:24,  3.72it/s] 12%|█▏        | 12/100 [00:03<00:20,  4.39it/s] 14%|█▍        | 14/100 [00:04<00:17,  4.84it/s] 17%|█▋        | 17/100 [00:04<00:11,  6.99it/s] 19%|█▉        | 19/100 [00:04<00:10,  7.60it/s] 21%|██        | 21/100 [00:05<00:14,  5.31it/s] 22%|██▏       | 22/100 [00:05<00:16,  4.83it/s] 23%|██▎       | 23/100 [00:05<00:14,  5.17it/s] 24%|██▍       | 24/100 [00:05<00:16,  4.54it/s] 26%|██▌       | 26/100 [00:06<00:12,  6.05it/s] 28%|██▊       | 28/100 [00:06<00:12,  5.61it/s] 33%|███▎      | 33/100 [00:06<00:06, 10.89it/s] 39%|███▉      | 39/100 [00:06<00:03, 15.66it/s] 43%|████▎     | 43/100 [00:06<00:02, 19.41it/s] 53%|█████▎    | 53/100 [00:07<00:01, 25.42it/s] 65%|██████▌   | 65/100 [00:07<00:00, 40.24it/s] 71%|███████   | 71/100 [00:07<00:00, 37.80it/s] 76%|███████▌  | 76/100 [00:07<00:00, 32.76it/s] 90%|█████████ | 90/100 [00:07<00:00, 50.56it/s] 98%|█████████▊| 98/100 [00:07<00:00, 56.13it/s]100%|██████████| 100/100 [00:07<00:00, 12.66it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:32,  1.54s/it]  3%|▎         | 3/100 [00:01<00:42,  2.28it/s]  6%|▌         | 6/100 [00:01<00:18,  4.96it/s]  8%|▊         | 8/100 [00:02<00:15,  6.09it/s] 10%|█         | 10/100 [00:02<00:13,  6.70it/s] 12%|█▏        | 12/100 [00:02<00:10,  8.20it/s] 14%|█▍        | 14/100 [00:02<00:10,  8.23it/s] 19%|█▉        | 19/100 [00:02<00:06, 12.19it/s] 21%|██        | 21/100 [00:03<00:08,  9.04it/s] 23%|██▎       | 23/100 [00:03<00:08,  9.60it/s] 25%|██▌       | 25/100 [00:03<00:06, 10.88it/s] 28%|██▊       | 28/100 [00:03<00:06, 10.66it/s] 31%|███       | 31/100 [00:03<00:05, 13.47it/s] 33%|███▎      | 33/100 [00:04<00:04, 13.50it/s] 37%|███▋      | 37/100 [00:04<00:03, 16.53it/s] 39%|███▉      | 39/100 [00:04<00:04, 12.54it/s] 41%|████      | 41/100 [00:04<00:04, 13.44it/s] 43%|████▎     | 43/100 [00:04<00:04, 14.12it/s] 46%|████▌     | 46/100 [00:04<00:03, 15.46it/s] 51%|█████     | 51/100 [00:05<00:02, 21.56it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.63it/s] 57%|█████▋    | 57/100 [00:05<00:02, 17.10it/s] 61%|██████    | 61/100 [00:05<00:01, 21.03it/s] 66%|██████▌   | 66/100 [00:05<00:01, 26.40it/s] 70%|███████   | 70/100 [00:06<00:01, 22.53it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.53it/s] 76%|███████▌  | 76/100 [00:06<00:01, 13.82it/s] 82%|████████▏ | 82/100 [00:06<00:00, 20.31it/s] 86%|████████▌ | 86/100 [00:06<00:00, 21.76it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.15it/s] 93%|█████████▎| 93/100 [00:07<00:00, 20.67it/s] 96%|█████████▌| 96/100 [00:07<00:00, 21.49it/s] 99%|█████████▉| 99/100 [00:07<00:00, 20.96it/s]100%|██████████| 100/100 [00:07<00:00, 13.09it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:25,  1.47s/it]  3%|▎         | 3/100 [00:01<00:42,  2.29it/s]  6%|▌         | 6/100 [00:01<00:18,  4.98it/s]  8%|▊         | 8/100 [00:01<00:14,  6.23it/s] 10%|█         | 10/100 [00:02<00:13,  6.61it/s] 12%|█▏        | 12/100 [00:02<00:11,  8.00it/s] 14%|█▍        | 14/100 [00:02<00:10,  8.07it/s] 19%|█▉        | 19/100 [00:02<00:06, 12.77it/s] 21%|██        | 21/100 [00:03<00:08,  9.33it/s] 23%|██▎       | 23/100 [00:03<00:07,  9.89it/s] 25%|██▌       | 25/100 [00:03<00:06, 11.23it/s] 28%|██▊       | 28/100 [00:03<00:06, 10.84it/s] 31%|███       | 31/100 [00:03<00:05, 13.67it/s] 33%|███▎      | 33/100 [00:04<00:04, 13.44it/s] 36%|███▌      | 36/100 [00:04<00:04, 15.83it/s] 38%|███▊      | 38/100 [00:04<00:04, 15.17it/s] 40%|████      | 40/100 [00:04<00:05, 11.24it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.44it/s] 46%|████▌     | 46/100 [00:04<00:03, 14.94it/s] 51%|█████     | 51/100 [00:05<00:02, 20.84it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.33it/s] 58%|█████▊    | 58/100 [00:05<00:02, 18.07it/s] 63%|██████▎   | 63/100 [00:05<00:01, 21.09it/s] 67%|██████▋   | 67/100 [00:05<00:01, 22.70it/s] 70%|███████   | 70/100 [00:06<00:01, 22.39it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.50it/s] 75%|███████▌  | 75/100 [00:06<00:02, 12.48it/s] 82%|████████▏ | 82/100 [00:06<00:00, 20.88it/s] 86%|████████▌ | 86/100 [00:06<00:00, 22.41it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.69it/s] 93%|█████████▎| 93/100 [00:07<00:00, 21.23it/s] 96%|█████████▌| 96/100 [00:07<00:00, 22.01it/s] 99%|█████████▉| 99/100 [00:07<00:00, 20.90it/s]100%|██████████| 100/100 [00:07<00:00, 13.13it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(APIServer pid=7058) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(EngineCore pid=7327) WARNING:root:Duplicate op registration for aten.__and__
+(EngineCore pid=7327) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=7327) WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=7327) Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:04<01:17,  4.84s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:11<01:25,  5.73s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:17<01:22,  5.92s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:23<01:18,  6.00s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:30<01:14,  6.22s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:36<01:09,  6.31s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:43<01:05,  6.53s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:50<00:59,  6.58s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:56<00:52,  6.52s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  59% Completed | 10/17 [01:02<00:45,  6.47s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  65% Completed | 11/17 [01:09<00:38,  6.36s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  71% Completed | 12/17 [01:15<00:31,  6.29s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  76% Completed | 13/17 [01:21<00:24,  6.24s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  82% Completed | 14/17 [01:27<00:18,  6.28s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  88% Completed | 15/17 [01:34<00:12,  6.30s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards:  94% Completed | 16/17 [01:40<00:06,  6.38s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:45<00:00,  5.89s/it]
+(EngineCore pid=7327) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:45<00:00,  6.20s/it]
+(EngineCore pid=7327) 
+(APIServer pid=7058) INFO:     Started server process [7058]
+(APIServer pid=7058) INFO:     Waiting for application startup.
+(APIServer pid=7058) INFO:     Application startup complete.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:03<05:18,  3.22s/it]  8%|▊         | 8/100 [00:03<00:28,  3.17it/s] 11%|█         | 11/100 [00:03<00:24,  3.69it/s] 13%|█▎        | 13/100 [00:04<00:19,  4.52it/s] 15%|█▌        | 15/100 [00:04<00:23,  3.59it/s] 20%|██        | 20/100 [00:05<00:13,  6.07it/s] 22%|██▏       | 22/100 [00:06<00:23,  3.29it/s] 24%|██▍       | 24/100 [00:06<00:19,  3.99it/s] 28%|██▊       | 28/100 [00:07<00:11,  6.06it/s] 33%|███▎      | 33/100 [00:07<00:07,  9.47it/s] 40%|████      | 40/100 [00:07<00:03, 15.34it/s] 46%|████▌     | 46/100 [00:07<00:02, 20.12it/s] 53%|█████▎    | 53/100 [00:07<00:02, 23.26it/s] 67%|██████▋   | 67/100 [00:07<00:00, 40.49it/s] 74%|███████▍  | 74/100 [00:08<00:00, 36.64it/s] 90%|█████████ | 90/100 [00:08<00:00, 56.92it/s]100%|██████████| 100/100 [00:08<00:00, 12.17it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:43,  1.65s/it]  3%|▎         | 3/100 [00:01<00:45,  2.14it/s]  6%|▌         | 6/100 [00:01<00:20,  4.69it/s]  8%|▊         | 8/100 [00:02<00:15,  5.93it/s] 10%|█         | 10/100 [00:02<00:13,  6.54it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.99it/s] 14%|█▍        | 14/100 [00:02<00:10,  8.08it/s] 20%|██        | 20/100 [00:02<00:05, 13.42it/s] 22%|██▏       | 22/100 [00:03<00:07, 10.12it/s] 24%|██▍       | 24/100 [00:03<00:07, 10.70it/s] 28%|██▊       | 28/100 [00:03<00:06, 11.80it/s] 31%|███       | 31/100 [00:03<00:04, 14.28it/s] 33%|███▎      | 33/100 [00:04<00:04, 14.31it/s] 36%|███▌      | 36/100 [00:04<00:03, 16.34it/s] 38%|███▊      | 38/100 [00:04<00:04, 15.28it/s] 40%|████      | 40/100 [00:04<00:05, 11.35it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.42it/s] 46%|████▌     | 46/100 [00:04<00:03, 14.88it/s] 51%|█████     | 51/100 [00:05<00:02, 20.29it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.00it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.44it/s] 62%|██████▏   | 62/100 [00:05<00:01, 22.15it/s] 66%|██████▌   | 66/100 [00:05<00:01, 25.08it/s] 70%|███████   | 70/100 [00:06<00:01, 21.78it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.25it/s] 76%|███████▌  | 76/100 [00:06<00:01, 13.41it/s] 83%|████████▎ | 83/100 [00:06<00:00, 21.24it/s] 87%|████████▋ | 87/100 [00:07<00:00, 21.71it/s] 90%|█████████ | 90/100 [00:07<00:00, 18.93it/s] 93%|█████████▎| 93/100 [00:07<00:00, 20.59it/s] 96%|█████████▌| 96/100 [00:07<00:00, 21.62it/s] 99%|█████████▉| 99/100 [00:07<00:00, 20.60it/s]100%|██████████| 100/100 [00:07<00:00, 13.09it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:23,  1.45s/it]  3%|▎         | 3/100 [00:01<00:41,  2.33it/s]  6%|▌         | 6/100 [00:01<00:18,  5.03it/s]  8%|▊         | 8/100 [00:01<00:14,  6.27it/s] 10%|█         | 10/100 [00:02<00:13,  6.71it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.90it/s] 14%|█▍        | 14/100 [00:02<00:10,  7.94it/s] 18%|█▊        | 18/100 [00:02<00:06, 12.72it/s] 20%|██        | 20/100 [00:02<00:07, 10.99it/s] 22%|██▏       | 22/100 [00:03<00:09,  8.43it/s] 24%|██▍       | 24/100 [00:03<00:08,  9.32it/s] 28%|██▊       | 28/100 [00:03<00:06, 10.86it/s] 31%|███       | 31/100 [00:03<00:05, 13.40it/s] 33%|███▎      | 33/100 [00:04<00:04, 13.51it/s] 36%|███▌      | 36/100 [00:04<00:04, 15.59it/s] 38%|███▊      | 38/100 [00:04<00:04, 14.78it/s] 40%|████      | 40/100 [00:04<00:05, 11.41it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.46it/s] 46%|████▌     | 46/100 [00:04<00:03, 14.87it/s] 51%|█████     | 51/100 [00:05<00:02, 20.20it/s] 54%|█████▍    | 54/100 [00:05<00:03, 13.98it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.16it/s] 62%|██████▏   | 62/100 [00:05<00:01, 21.79it/s] 67%|██████▋   | 67/100 [00:05<00:01, 22.71it/s] 70%|███████   | 70/100 [00:06<00:01, 22.46it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.53it/s] 75%|███████▌  | 75/100 [00:06<00:01, 12.69it/s] 84%|████████▍ | 84/100 [00:06<00:00, 22.21it/s] 87%|████████▋ | 87/100 [00:07<00:00, 23.18it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.76it/s] 93%|█████████▎| 93/100 [00:07<00:00, 21.25it/s] 96%|█████████▌| 96/100 [00:07<00:00, 22.03it/s] 99%|█████████▉| 99/100 [00:07<00:00, 20.80it/s]100%|██████████| 100/100 [00:07<00:00, 13.09it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(APIServer pid=13864) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(EngineCore pid=14133) WARNING:root:Duplicate op registration for aten.__and__
+(EngineCore pid=14133) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=14133) WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=14133) Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:04<01:17,  4.84s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:11<01:26,  5.77s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:17<01:25,  6.14s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:24<01:22,  6.33s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:31<01:17,  6.46s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:37<01:11,  6.53s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:44<01:04,  6.48s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:50<00:59,  6.57s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:57<00:52,  6.59s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  59% Completed | 10/17 [01:04<00:46,  6.59s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  65% Completed | 11/17 [01:11<00:40,  6.69s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  71% Completed | 12/17 [01:17<00:33,  6.64s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  76% Completed | 13/17 [01:24<00:26,  6.68s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  82% Completed | 14/17 [01:31<00:20,  6.69s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  88% Completed | 15/17 [01:37<00:13,  6.70s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards:  94% Completed | 16/17 [01:44<00:06,  6.75s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:48<00:00,  5.94s/it]
+(EngineCore pid=14133) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:48<00:00,  6.40s/it]
+(EngineCore pid=14133) 
+(APIServer pid=13864) INFO:     Started server process [13864]
+(APIServer pid=13864) INFO:     Waiting for application startup.
+(APIServer pid=13864) INFO:     Application startup complete.
+[BEGIN SERVER]
+Server overrides: {'gpu_memory_utilization': 0.9, 'max_num_seqs': 128, 'max_num_batched_tokens': 2048, 'max_model_len': 4096}
+Server command: ['vllm', 'serve', 'Qwen/Qwen3-32B', '--tensor-parallel-size', '8', '--dtype', 'bfloat16', '--host', '0.0.0.0', '--port', '8000', '--trust-remote-code', '--gpu-memory-utilization', '0.9', '--max-num-seqs', '128', '--max-num-batched-tokens', '2048', '--max-model-len', '4096']
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 0
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=0.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=0.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 1
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=1.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=1.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 2
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=2.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=2.json
+[END BENCHMARK]
+[END SERVER]
+[BEGIN SERVER]
+Server overrides: {'gpu_memory_utilization': 0.9, 'max_num_seqs': 256, 'max_num_batched_tokens': 4096, 'max_model_len': 4096}
+Server command: ['vllm', 'serve', 'Qwen/Qwen3-32B', '--tensor-parallel-size', '8', '--dtype', 'bfloat16', '--host', '0.0.0.0', '--port', '8000', '--trust-remote-code', '--gpu-memory-utilization', '0.9', '--max-num-seqs', '256', '--max-num-batched-tokens', '4096', '--max-model-len', '4096']
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 0
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=0.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=0.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 1
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=1.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=1.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 2
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=2.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.9-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=2.json
+[END BENCHMARK]
+[END SERVER]
+[BEGIN SERVER]
+Server overrides: {'gpu_memory_utilization': 0.95, 'max_num_seqs': 128, 'max_num_batched_tokens': 2048, 'max_model_len': 4096}
+Server command: ['vllm', 'serve', 'Qwen/Qwen3-32B', '--tensor-parallel-size', '8', '--dtype', 'bfloat16', '--host', '0.0.0.0', '--port', '8000', '--trust-remote-code', '--gpu-memory-utilization', '0.95', '--max-num-seqs', '128', '--max-num-batched-tokens', '2048', '--max-model-len', '4096']
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 0
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=0.json']
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:03<05:07,  3.11s/it]  8%|▊         | 8/100 [00:03<00:28,  3.20it/s] 10%|█         | 10/100 [00:03<00:27,  3.24it/s] 14%|█▍        | 14/100 [00:04<00:20,  4.20it/s] 19%|█▉        | 19/100 [00:04<00:12,  6.74it/s] 21%|██        | 21/100 [00:05<00:13,  5.81it/s] 23%|██▎       | 23/100 [00:05<00:14,  5.17it/s] 24%|██▍       | 24/100 [00:05<00:14,  5.15it/s] 26%|██▌       | 26/100 [00:06<00:12,  5.95it/s] 28%|██▊       | 28/100 [00:06<00:12,  5.87it/s] 32%|███▏      | 32/100 [00:06<00:07,  9.38it/s] 39%|███▉      | 39/100 [00:06<00:03, 15.47it/s] 45%|████▌     | 45/100 [00:06<00:02, 21.39it/s] 53%|█████▎    | 53/100 [00:07<00:01, 24.77it/s] 65%|██████▌   | 65/100 [00:07<00:00, 39.50it/s] 71%|███████   | 71/100 [00:07<00:00, 36.09it/s] 76%|███████▌  | 76/100 [00:07<00:00, 29.69it/s] 90%|█████████ | 90/100 [00:07<00:00, 45.47it/s] 99%|█████████▉| 99/100 [00:08<00:00, 53.34it/s]100%|██████████| 100/100 [00:08<00:00, 12.49it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:55,  1.77s/it]  3%|▎         | 3/100 [00:01<00:48,  1.98it/s]  6%|▌         | 6/100 [00:02<00:21,  4.38it/s]  8%|▊         | 8/100 [00:02<00:16,  5.55it/s] 10%|█         | 10/100 [00:02<00:14,  6.18it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.79it/s] 14%|█▍        | 14/100 [00:02<00:10,  7.90it/s] 19%|█▉        | 19/100 [00:02<00:05, 14.25it/s] 22%|██▏       | 22/100 [00:03<00:07,  9.81it/s] 24%|██▍       | 24/100 [00:03<00:07, 10.30it/s] 28%|██▊       | 28/100 [00:03<00:06, 11.47it/s] 30%|███       | 30/100 [00:04<00:05, 12.56it/s] 32%|███▏      | 32/100 [00:04<00:05, 12.98it/s] 34%|███▍      | 34/100 [00:04<00:04, 13.44it/s] 37%|███▋      | 37/100 [00:04<00:03, 15.91it/s] 39%|███▉      | 39/100 [00:04<00:04, 12.53it/s] 41%|████      | 41/100 [00:04<00:04, 13.71it/s] 43%|████▎     | 43/100 [00:04<00:04, 14.21it/s] 46%|████▌     | 46/100 [00:05<00:03, 15.87it/s] 51%|█████     | 51/100 [00:05<00:02, 21.59it/s] 54%|█████▍    | 54/100 [00:05<00:03, 13.09it/s] 58%|█████▊    | 58/100 [00:05<00:02, 16.83it/s] 63%|██████▎   | 63/100 [00:05<00:01, 21.62it/s] 67%|██████▋   | 67/100 [00:06<00:01, 21.68it/s] 70%|███████   | 70/100 [00:06<00:01, 22.01it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.13it/s] 75%|███████▌  | 75/100 [00:06<00:02, 12.34it/s] 82%|████████▏ | 82/100 [00:07<00:00, 20.79it/s] 86%|████████▌ | 86/100 [00:07<00:00, 22.73it/s] 90%|█████████ | 90/100 [00:07<00:00, 21.09it/s] 93%|█████████▎| 93/100 [00:07<00:00, 22.62it/s] 96%|█████████▌| 96/100 [00:07<00:00, 23.99it/s] 99%|█████████▉| 99/100 [00:07<00:00, 22.01it/s]100%|██████████| 100/100 [00:07<00:00, 12.85it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:35,  1.57s/it]  3%|▎         | 3/100 [00:01<00:45,  2.15it/s]  5%|▌         | 5/100 [00:01<00:24,  3.96it/s]  7%|▋         | 7/100 [00:01<00:15,  5.97it/s]  9%|▉         | 9/100 [00:02<00:16,  5.63it/s] 11%|█         | 11/100 [00:02<00:12,  7.22it/s] 13%|█▎        | 13/100 [00:02<00:09,  9.11it/s] 15%|█▌        | 15/100 [00:02<00:08,  9.62it/s] 18%|█▊        | 18/100 [00:02<00:06, 12.54it/s] 20%|██        | 20/100 [00:03<00:07, 11.01it/s] 22%|██▏       | 22/100 [00:03<00:09,  8.51it/s] 24%|██▍       | 24/100 [00:03<00:08,  9.38it/s] 28%|██▊       | 28/100 [00:03<00:06, 10.92it/s] 30%|███       | 30/100 [00:04<00:05, 12.15it/s] 32%|███▏      | 32/100 [00:04<00:05, 12.65it/s] 34%|███▍      | 34/100 [00:04<00:04, 13.23it/s] 37%|███▋      | 37/100 [00:04<00:04, 15.66it/s] 39%|███▉      | 39/100 [00:04<00:05, 11.92it/s] 41%|████      | 41/100 [00:04<00:04, 13.27it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.88it/s] 46%|████▌     | 46/100 [00:05<00:03, 15.63it/s] 51%|█████     | 51/100 [00:05<00:02, 21.27it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.16it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.63it/s] 63%|██████▎   | 63/100 [00:05<00:01, 23.01it/s] 67%|██████▋   | 67/100 [00:06<00:01, 23.65it/s] 70%|███████   | 70/100 [00:06<00:01, 22.57it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.51it/s] 75%|███████▌  | 75/100 [00:06<00:01, 12.65it/s] 82%|████████▏ | 82/100 [00:06<00:00, 21.09it/s] 86%|████████▌ | 86/100 [00:07<00:00, 22.46it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.99it/s] 93%|█████████▎| 93/100 [00:07<00:00, 21.54it/s] 96%|█████████▌| 96/100 [00:07<00:00, 22.52it/s] 99%|█████████▉| 99/100 [00:07<00:00, 21.89it/s]100%|██████████| 100/100 [00:07<00:00, 12.87it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(APIServer pid=20155) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(EngineCore pid=20424) WARNING:root:Duplicate op registration for aten.__and__
+(EngineCore pid=20424) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=20424) WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=20424) Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:04<01:15,  4.72s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:11<01:24,  5.64s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:17<01:24,  6.02s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:24<01:21,  6.25s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:30<01:15,  6.28s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:37<01:10,  6.40s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:43<01:03,  6.38s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:49<00:57,  6.37s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:56<00:51,  6.45s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  59% Completed | 10/17 [01:02<00:45,  6.46s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  65% Completed | 11/17 [01:09<00:38,  6.42s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  71% Completed | 12/17 [01:15<00:31,  6.38s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  76% Completed | 13/17 [01:21<00:25,  6.40s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  82% Completed | 14/17 [01:28<00:19,  6.49s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  88% Completed | 15/17 [01:35<00:13,  6.54s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards:  94% Completed | 16/17 [01:41<00:06,  6.50s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:45<00:00,  5.75s/it]
+(EngineCore pid=20424) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:45<00:00,  6.22s/it]
+(EngineCore pid=20424) 
+(APIServer pid=20155) INFO:     Started server process [20155]
+(APIServer pid=20155) INFO:     Waiting for application startup.
+(APIServer pid=20155) INFO:     Application startup complete.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:03<05:09,  3.13s/it]  8%|▊         | 8/100 [00:03<00:28,  3.26it/s] 11%|█         | 11/100 [00:03<00:24,  3.60it/s] 13%|█▎        | 13/100 [00:04<00:20,  4.30it/s] 15%|█▌        | 15/100 [00:04<00:22,  3.85it/s] 19%|█▉        | 19/100 [00:04<00:13,  6.10it/s] 21%|██        | 21/100 [00:06<00:24,  3.26it/s] 23%|██▎       | 23/100 [00:06<00:19,  3.98it/s] 25%|██▌       | 25/100 [00:06<00:15,  4.99it/s] 28%|██▊       | 28/100 [00:07<00:10,  6.60it/s] 33%|███▎      | 33/100 [00:07<00:06, 10.86it/s] 40%|████      | 40/100 [00:07<00:03, 17.88it/s] 46%|████▌     | 46/100 [00:07<00:02, 23.06it/s] 53%|█████▎    | 53/100 [00:07<00:01, 27.51it/s] 67%|██████▋   | 67/100 [00:07<00:00, 45.61it/s] 74%|███████▍  | 74/100 [00:07<00:00, 38.17it/s] 90%|█████████ | 90/100 [00:08<00:00, 57.52it/s]100%|██████████| 100/100 [00:08<00:00, 12.31it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:44,  1.67s/it]  3%|▎         | 3/100 [00:01<00:45,  2.12it/s]  6%|▌         | 6/100 [00:01<00:20,  4.61it/s]  8%|▊         | 8/100 [00:02<00:15,  5.78it/s] 10%|█         | 10/100 [00:02<00:14,  6.39it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.82it/s] 14%|█▍        | 14/100 [00:02<00:10,  8.00it/s] 20%|██        | 20/100 [00:03<00:06, 13.29it/s] 22%|██▏       | 22/100 [00:03<00:07, 10.01it/s] 24%|██▍       | 24/100 [00:03<00:07, 10.75it/s] 27%|██▋       | 27/100 [00:03<00:05, 13.67it/s] 29%|██▉       | 29/100 [00:03<00:05, 11.86it/s] 32%|███▏      | 32/100 [00:04<00:05, 13.27it/s] 34%|███▍      | 34/100 [00:04<00:04, 14.45it/s] 37%|███▋      | 37/100 [00:04<00:03, 16.13it/s] 39%|███▉      | 39/100 [00:04<00:05, 12.12it/s] 41%|████      | 41/100 [00:04<00:04, 13.06it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.64it/s] 46%|████▌     | 46/100 [00:04<00:03, 15.44it/s] 51%|█████     | 51/100 [00:05<00:02, 20.95it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.24it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.54it/s] 62%|██████▏   | 62/100 [00:05<00:01, 22.53it/s] 67%|██████▋   | 67/100 [00:05<00:01, 22.91it/s] 70%|███████   | 70/100 [00:06<00:01, 23.03it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.78it/s] 75%|███████▌  | 75/100 [00:06<00:01, 12.85it/s] 82%|████████▏ | 82/100 [00:06<00:00, 21.23it/s] 86%|████████▌ | 86/100 [00:06<00:00, 22.53it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.62it/s] 94%|█████████▍| 94/100 [00:07<00:00, 20.39it/s] 99%|█████████▉| 99/100 [00:07<00:00, 21.63it/s]100%|██████████| 100/100 [00:07<00:00, 13.08it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:25,  1.47s/it]  3%|▎         | 3/100 [00:01<00:42,  2.29it/s]  6%|▌         | 6/100 [00:01<00:19,  4.93it/s]  8%|▊         | 8/100 [00:01<00:15,  6.10it/s] 10%|█         | 10/100 [00:02<00:13,  6.50it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.81it/s] 14%|█▍        | 14/100 [00:02<00:10,  7.96it/s] 18%|█▊        | 18/100 [00:02<00:06, 12.37it/s] 20%|██        | 20/100 [00:03<00:07, 10.84it/s] 22%|██▏       | 22/100 [00:03<00:09,  8.55it/s] 24%|██▍       | 24/100 [00:03<00:08,  9.37it/s] 28%|██▊       | 28/100 [00:03<00:06, 11.07it/s] 32%|███▏      | 32/100 [00:04<00:05, 13.13it/s] 36%|███▌      | 36/100 [00:04<00:04, 15.62it/s] 38%|███▊      | 38/100 [00:04<00:04, 14.76it/s] 40%|████      | 40/100 [00:04<00:05, 11.89it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.64it/s] 46%|████▌     | 46/100 [00:04<00:03, 15.30it/s] 51%|█████     | 51/100 [00:05<00:02, 20.37it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.16it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.21it/s] 62%|██████▏   | 62/100 [00:05<00:01, 21.91it/s] 66%|██████▌   | 66/100 [00:05<00:01, 24.94it/s] 70%|███████   | 70/100 [00:06<00:01, 21.93it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.38it/s] 76%|███████▌  | 76/100 [00:06<00:01, 13.45it/s] 84%|████████▍ | 84/100 [00:06<00:00, 21.01it/s] 87%|████████▋ | 87/100 [00:07<00:00, 22.12it/s] 90%|█████████ | 90/100 [00:07<00:00, 18.68it/s] 94%|█████████▍| 94/100 [00:07<00:00, 19.61it/s] 97%|█████████▋| 97/100 [00:07<00:00, 21.39it/s]100%|██████████| 100/100 [00:07<00:00, 13.03it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(APIServer pid=26812) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(EngineCore pid=27081) WARNING:root:Duplicate op registration for aten.__and__
+(EngineCore pid=27081) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=27081) WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=27081) Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:04<01:12,  4.53s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:11<01:25,  5.69s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:17<01:24,  6.06s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:24<01:20,  6.22s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:30<01:14,  6.21s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:36<01:09,  6.28s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:42<01:03,  6.30s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:49<00:56,  6.31s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:56<00:52,  6.56s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  59% Completed | 10/17 [01:02<00:45,  6.57s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  65% Completed | 11/17 [01:09<00:38,  6.50s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  71% Completed | 12/17 [01:15<00:32,  6.51s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  76% Completed | 13/17 [01:22<00:25,  6.45s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  82% Completed | 14/17 [01:28<00:19,  6.48s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  88% Completed | 15/17 [01:35<00:13,  6.50s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards:  94% Completed | 16/17 [01:41<00:06,  6.44s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:45<00:00,  5.69s/it]
+(EngineCore pid=27081) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:45<00:00,  6.21s/it]
+(EngineCore pid=27081) 
+(APIServer pid=26812) INFO:     Started server process [26812]
+(APIServer pid=26812) INFO:     Waiting for application startup.
+(APIServer pid=26812) INFO:     Application startup complete.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:03<05:27,  3.31s/it]  8%|▊         | 8/100 [00:03<00:29,  3.09it/s] 11%|█         | 11/100 [00:04<00:26,  3.42it/s] 13%|█▎        | 13/100 [00:04<00:22,  3.88it/s] 15%|█▌        | 15/100 [00:05<00:23,  3.69it/s] 19%|█▉        | 19/100 [00:05<00:13,  6.07it/s] 21%|██        | 21/100 [00:06<00:26,  3.04it/s] 23%|██▎       | 23/100 [00:07<00:20,  3.72it/s] 25%|██▌       | 25/100 [00:07<00:16,  4.68it/s] 28%|██▊       | 28/100 [00:07<00:11,  6.55it/s] 33%|███▎      | 33/100 [00:07<00:06, 10.78it/s] 40%|████      | 40/100 [00:07<00:03, 17.73it/s] 46%|████▌     | 46/100 [00:07<00:02, 23.44it/s] 53%|█████▎    | 53/100 [00:07<00:01, 27.16it/s] 67%|██████▋   | 67/100 [00:08<00:00, 46.31it/s] 74%|███████▍  | 74/100 [00:08<00:00, 42.98it/s] 92%|█████████▏| 92/100 [00:08<00:00, 67.77it/s]100%|██████████| 100/100 [00:08<00:00, 11.97it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:49,  1.71s/it]  3%|▎         | 3/100 [00:01<00:47,  2.06it/s]  6%|▌         | 6/100 [00:01<00:20,  4.55it/s]  8%|▊         | 8/100 [00:02<00:16,  5.71it/s] 10%|█         | 10/100 [00:02<00:14,  6.43it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.98it/s] 14%|█▍        | 14/100 [00:02<00:10,  8.07it/s] 20%|██        | 20/100 [00:03<00:06, 13.31it/s] 22%|██▏       | 22/100 [00:03<00:07, 10.17it/s] 24%|██▍       | 24/100 [00:03<00:07, 10.82it/s] 28%|██▊       | 28/100 [00:03<00:06, 11.75it/s] 32%|███▏      | 32/100 [00:04<00:05, 13.57it/s] 34%|███▍      | 34/100 [00:04<00:04, 14.48it/s] 37%|███▋      | 37/100 [00:04<00:03, 15.80it/s] 39%|███▉      | 39/100 [00:04<00:05, 12.05it/s] 42%|████▏     | 42/100 [00:04<00:04, 14.03it/s] 45%|████▌     | 45/100 [00:04<00:03, 15.14it/s] 49%|████▉     | 49/100 [00:05<00:02, 18.79it/s] 52%|█████▏    | 52/100 [00:05<00:02, 19.94it/s] 55%|█████▌    | 55/100 [00:05<00:03, 14.26it/s] 58%|█████▊    | 58/100 [00:05<00:02, 16.66it/s] 63%|██████▎   | 63/100 [00:05<00:01, 21.15it/s] 67%|██████▋   | 67/100 [00:05<00:01, 22.96it/s] 70%|███████   | 70/100 [00:06<00:01, 22.86it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.22it/s] 75%|███████▌  | 75/100 [00:06<00:02, 12.30it/s] 82%|████████▏ | 82/100 [00:06<00:00, 20.62it/s] 86%|████████▌ | 86/100 [00:07<00:00, 21.92it/s] 90%|█████████ | 90/100 [00:07<00:00, 18.92it/s] 94%|█████████▍| 94/100 [00:07<00:00, 19.73it/s] 99%|█████████▉| 99/100 [00:07<00:00, 21.42it/s]100%|██████████| 100/100 [00:07<00:00, 13.00it/s]
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=0.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 1
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=1.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=1.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 2
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=2.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=2.json
+[END BENCHMARK]
+[END SERVER]
+[BEGIN SERVER]
+Server overrides: {'gpu_memory_utilization': 0.95, 'max_num_seqs': 256, 'max_num_batched_tokens': 4096, 'max_model_len': 4096}
+Server command: ['vllm', 'serve', 'Qwen/Qwen3-32B', '--tensor-parallel-size', '8', '--dtype', 'bfloat16', '--host', '0.0.0.0', '--port', '8000', '--trust-remote-code', '--gpu-memory-utilization', '0.95', '--max-num-seqs', '256', '--max-num-batched-tokens', '4096', '--max-model-len', '4096']
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 0
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=0.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=0.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 1
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=1.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=1.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 2
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=2.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=2.json
+[END BENCHMARK]
+[END SERVER]
+[BEGIN SERVER]
+Server overrides: {'gpu_memory_utilization': 0.95, 'max_num_seqs': 512, 'max_num_batched_tokens': 8192, 'max_model_len': 4096}
+Server command: ['vllm', 'serve', 'Qwen/Qwen3-32B', '--tensor-parallel-size', '8', '--dtype', 'bfloat16', '--host', '0.0.0.0', '--port', '8000', '--trust-remote-code', '--gpu-memory-utilization', '0.95', '--max-num-seqs', '512', '--max-num-batched-tokens', '8192', '--max-model-len', '4096']
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 0
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=512-max_num_batched_tokens=8192-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=0.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=512-max_num_batched_tokens=8192-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=0.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 1
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=512-max_num_batched_tokens=8192-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=1.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=512-max_num_batched_tokens=8192-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=1.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 2
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:28,  1.50s/it]  3%|▎         | 3/100 [00:01<00:43,  2.24it/s]  6%|▌         | 6/100 [00:01<00:19,  4.83it/s]  8%|▊         | 8/100 [00:02<00:15,  6.06it/s] 10%|█         | 10/100 [00:02<00:13,  6.49it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.77it/s] 14%|█▍        | 14/100 [00:02<00:10,  8.06it/s] 18%|█▊        | 18/100 [00:02<00:06, 12.44it/s] 20%|██        | 20/100 [00:03<00:07, 11.04it/s] 22%|██▏       | 22/100 [00:03<00:09,  8.59it/s] 24%|██▍       | 24/100 [00:03<00:08,  9.35it/s] 28%|██▊       | 28/100 [00:03<00:06, 10.96it/s] 32%|███▏      | 32/100 [00:04<00:05, 12.92it/s] 34%|███▍      | 34/100 [00:04<00:04, 13.76it/s] 37%|███▋      | 37/100 [00:04<00:04, 15.06it/s] 39%|███▉      | 39/100 [00:04<00:05, 12.12it/s] 41%|████      | 41/100 [00:04<00:04, 13.10it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.97it/s] 46%|████▌     | 46/100 [00:04<00:03, 15.74it/s] 51%|█████     | 51/100 [00:05<00:02, 21.06it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.24it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.45it/s] 63%|██████▎   | 63/100 [00:05<00:01, 22.35it/s] 67%|██████▋   | 67/100 [00:05<00:01, 23.24it/s] 70%|███████   | 70/100 [00:06<00:01, 22.86it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.45it/s] 75%|███████▌  | 75/100 [00:06<00:02, 12.47it/s] 84%|████████▍ | 84/100 [00:06<00:00, 21.78it/s] 87%|████████▋ | 87/100 [00:07<00:00, 22.60it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.01it/s] 93%|█████████▎| 93/100 [00:07<00:00, 20.90it/s] 96%|█████████▌| 96/100 [00:07<00:00, 22.09it/s] 99%|█████████▉| 99/100 [00:07<00:00, 20.67it/s]100%|██████████| 100/100 [00:07<00:00, 12.97it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(APIServer pid=33937) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(EngineCore pid=34206) WARNING:root:Duplicate op registration for aten.__and__
+(EngineCore pid=34206) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=34206) WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=34206) Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:04<01:14,  4.64s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:11<01:26,  5.76s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:17<01:24,  6.01s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:23<01:19,  6.13s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:30<01:14,  6.21s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:36<01:09,  6.29s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:42<01:02,  6.23s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:48<00:55,  6.21s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:55<00:50,  6.28s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  59% Completed | 10/17 [01:01<00:44,  6.40s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  65% Completed | 11/17 [01:08<00:38,  6.41s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  71% Completed | 12/17 [01:14<00:31,  6.37s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  76% Completed | 13/17 [01:20<00:25,  6.30s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  82% Completed | 14/17 [01:27<00:18,  6.33s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  88% Completed | 15/17 [01:33<00:12,  6.37s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards:  94% Completed | 16/17 [01:40<00:06,  6.47s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:45<00:00,  5.96s/it]
+(EngineCore pid=34206) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:45<00:00,  6.19s/it]
+(EngineCore pid=34206) 
+(APIServer pid=33937) INFO:     Started server process [33937]
+(APIServer pid=33937) INFO:     Waiting for application startup.
+(APIServer pid=33937) INFO:     Application startup complete.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:03<05:03,  3.07s/it]  8%|▊         | 8/100 [00:03<00:27,  3.30it/s] 11%|█         | 11/100 [00:03<00:24,  3.66it/s] 14%|█▍        | 14/100 [00:04<00:22,  3.88it/s] 20%|██        | 20/100 [00:04<00:11,  6.80it/s] 22%|██▏       | 22/100 [00:05<00:15,  5.18it/s] 24%|██▍       | 24/100 [00:06<00:15,  5.01it/s] 26%|██▌       | 26/100 [00:06<00:12,  6.05it/s] 28%|██▊       | 28/100 [00:06<00:12,  5.95it/s] 33%|███▎      | 33/100 [00:06<00:06, 10.03it/s] 39%|███▉      | 39/100 [00:06<00:04, 14.98it/s] 45%|████▌     | 45/100 [00:06<00:02, 20.28it/s] 53%|█████▎    | 53/100 [00:07<00:02, 23.41it/s] 65%|██████▌   | 65/100 [00:07<00:00, 37.62it/s] 71%|███████   | 71/100 [00:07<00:00, 35.28it/s] 76%|███████▌  | 76/100 [00:07<00:00, 30.47it/s] 90%|█████████ | 90/100 [00:07<00:00, 46.96it/s] 98%|█████████▊| 98/100 [00:07<00:00, 52.21it/s]100%|██████████| 100/100 [00:07<00:00, 12.58it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:49,  1.71s/it]  3%|▎         | 3/100 [00:01<00:46,  2.07it/s]  6%|▌         | 6/100 [00:01<00:20,  4.58it/s]  8%|▊         | 8/100 [00:02<00:16,  5.72it/s] 10%|█         | 10/100 [00:02<00:14,  6.41it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.81it/s] 14%|█▍        | 14/100 [00:02<00:10,  8.07it/s] 20%|██        | 20/100 [00:03<00:06, 13.29it/s] 22%|██▏       | 22/100 [00:03<00:07,  9.94it/s] 24%|██▍       | 24/100 [00:03<00:07, 10.60it/s] 28%|██▊       | 28/100 [00:03<00:06, 11.69it/s] 31%|███       | 31/100 [00:03<00:04, 14.01it/s] 33%|███▎      | 33/100 [00:04<00:04, 13.69it/s] 36%|███▌      | 36/100 [00:04<00:04, 15.75it/s] 38%|███▊      | 38/100 [00:04<00:04, 15.30it/s] 40%|████      | 40/100 [00:04<00:05, 11.69it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.45it/s] 46%|████▌     | 46/100 [00:04<00:03, 15.28it/s] 51%|█████     | 51/100 [00:05<00:02, 20.94it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.10it/s] 58%|█████▊    | 58/100 [00:05<00:02, 17.87it/s] 63%|██████▎   | 63/100 [00:05<00:01, 21.42it/s] 67%|██████▋   | 67/100 [00:05<00:01, 22.37it/s] 70%|███████   | 70/100 [00:06<00:01, 22.49it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.13it/s] 75%|███████▌  | 75/100 [00:06<00:02, 12.45it/s] 82%|████████▏ | 82/100 [00:06<00:00, 20.64it/s] 86%|████████▌ | 86/100 [00:07<00:00, 22.38it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.61it/s] 93%|█████████▎| 93/100 [00:07<00:00, 20.92it/s] 96%|█████████▌| 96/100 [00:07<00:00, 22.12it/s] 99%|█████████▉| 99/100 [00:07<00:00, 21.22it/s]100%|██████████| 100/100 [00:07<00:00, 13.00it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:29,  1.51s/it]  3%|▎         | 3/100 [00:01<00:43,  2.23it/s]  6%|▌         | 6/100 [00:01<00:19,  4.89it/s]  8%|▊         | 8/100 [00:02<00:15,  6.03it/s] 10%|█         | 10/100 [00:02<00:13,  6.50it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.75it/s] 14%|█▍        | 14/100 [00:02<00:10,  7.86it/s] 18%|█▊        | 18/100 [00:02<00:06, 12.12it/s] 20%|██        | 20/100 [00:03<00:07, 10.74it/s] 22%|██▏       | 22/100 [00:03<00:09,  8.36it/s] 24%|██▍       | 24/100 [00:03<00:08,  9.18it/s] 28%|██▊       | 28/100 [00:03<00:06, 10.73it/s] 31%|███       | 31/100 [00:04<00:05, 13.43it/s] 33%|███▎      | 33/100 [00:04<00:05, 13.22it/s] 36%|███▌      | 36/100 [00:04<00:04, 14.88it/s] 38%|███▊      | 38/100 [00:04<00:04, 14.71it/s] 40%|████      | 40/100 [00:04<00:05, 11.66it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.65it/s] 46%|████▌     | 46/100 [00:05<00:03, 15.51it/s] 51%|█████     | 51/100 [00:05<00:02, 21.18it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.36it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.79it/s] 62%|██████▏   | 62/100 [00:05<00:01, 22.80it/s] 67%|██████▋   | 67/100 [00:05<00:01, 23.61it/s] 70%|███████   | 70/100 [00:06<00:01, 23.15it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.79it/s] 76%|███████▌  | 76/100 [00:06<00:01, 14.09it/s] 83%|████████▎ | 83/100 [00:06<00:00, 22.19it/s] 87%|████████▋ | 87/100 [00:07<00:00, 22.76it/s] 91%|█████████ | 91/100 [00:07<00:00, 20.12it/s] 94%|█████████▍| 94/100 [00:07<00:00, 20.05it/s] 99%|█████████▉| 99/100 [00:07<00:00, 21.79it/s]100%|██████████| 100/100 [00:07<00:00, 13.07it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(APIServer pid=40189) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(EngineCore pid=40458) WARNING:root:Duplicate op registration for aten.__and__
+(EngineCore pid=40458) Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:04<01:12,  4.51s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:11<01:26,  5.78s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:17<01:25,  6.12s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:24<01:21,  6.25s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:30<01:17,  6.42s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:37<01:10,  6.45s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:43<01:04,  6.50s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:50<00:59,  6.60s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:57<00:52,  6.60s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  59% Completed | 10/17 [01:04<00:46,  6.70s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  65% Completed | 11/17 [01:10<00:40,  6.69s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  71% Completed | 12/17 [01:17<00:33,  6.70s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  76% Completed | 13/17 [01:24<00:26,  6.64s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  82% Completed | 14/17 [01:30<00:19,  6.66s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  88% Completed | 15/17 [01:37<00:13,  6.63s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards:  94% Completed | 16/17 [01:44<00:06,  6.70s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:48<00:00,  5.93s/it]
+(EngineCore pid=40458) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:48<00:00,  6.38s/it]
+(EngineCore pid=40458) 
+(EngineCore pid=40458) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=40458) WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(APIServer pid=40189) INFO:     Started server process [40189]
+(APIServer pid=40189) INFO:     Waiting for application startup.
+(APIServer pid=40189) INFO:     Application startup complete.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:02<04:24,  2.67s/it]  6%|▌         | 6/100 [00:02<00:32,  2.86it/s]  9%|▉         | 9/100 [00:03<00:30,  3.02it/s] 11%|█         | 11/100 [00:03<00:22,  3.91it/s] 14%|█▍        | 14/100 [00:04<00:22,  3.80it/s] 16%|█▌        | 16/100 [00:04<00:17,  4.78it/s] 20%|██        | 20/100 [00:05<00:11,  6.75it/s] 22%|██▏       | 22/100 [00:06<00:24,  3.24it/s] 24%|██▍       | 24/100 [00:06<00:19,  3.98it/s] 28%|██▊       | 28/100 [00:07<00:12,  5.94it/s] 33%|███▎      | 33/100 [00:07<00:07,  9.41it/s] 39%|███▉      | 39/100 [00:07<00:04, 13.62it/s] 46%|████▌     | 46/100 [00:07<00:02, 19.66it/s] 53%|█████▎    | 53/100 [00:07<00:01, 23.78it/s] 67%|██████▋   | 67/100 [00:07<00:00, 41.11it/s] 74%|███████▍  | 74/100 [00:08<00:00, 37.52it/s] 90%|█████████ | 90/100 [00:08<00:00, 58.28it/s]100%|██████████| 100/100 [00:08<00:00, 12.19it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:32,  1.54s/it]  3%|▎         | 3/100 [00:01<00:43,  2.24it/s]  6%|▌         | 6/100 [00:01<00:19,  4.89it/s]  8%|▊         | 8/100 [00:02<00:15,  6.12it/s] 10%|█         | 10/100 [00:02<00:14,  6.37it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.69it/s] 14%|█▍        | 14/100 [00:02<00:11,  7.82it/s] 18%|█▊        | 18/100 [00:02<00:06, 12.45it/s] 20%|██        | 20/100 [00:03<00:06, 11.64it/s] 22%|██▏       | 22/100 [00:03<00:08,  8.73it/s] 24%|██▍       | 24/100 [00:03<00:07,  9.60it/s] 28%|██▊       | 28/100 [00:03<00:06, 11.91it/s] 31%|███       | 31/100 [00:03<00:04, 14.49it/s] 33%|███▎      | 33/100 [00:04<00:04, 14.29it/s] 36%|███▌      | 36/100 [00:04<00:03, 16.51it/s] 38%|███▊      | 38/100 [00:04<00:04, 15.01it/s] 40%|████      | 40/100 [00:04<00:05, 11.39it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.45it/s] 46%|████▌     | 46/100 [00:04<00:03, 14.90it/s] 51%|█████     | 51/100 [00:05<00:02, 20.25it/s] 54%|█████▍    | 54/100 [00:05<00:03, 13.95it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.17it/s] 62%|██████▏   | 62/100 [00:05<00:01, 21.76it/s] 66%|██████▌   | 66/100 [00:05<00:01, 24.79it/s] 70%|███████   | 70/100 [00:06<00:01, 21.25it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.14it/s] 75%|███████▌  | 75/100 [00:06<00:02, 12.30it/s] 84%|████████▍ | 84/100 [00:06<00:00, 21.47it/s] 87%|████████▋ | 87/100 [00:07<00:00, 22.47it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.29it/s] 94%|█████████▍| 94/100 [00:07<00:00, 20.13it/s] 99%|█████████▉| 99/100 [00:07<00:00, 21.88it/s]100%|██████████| 100/100 [00:07<00:00, 13.06it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:01<02:28,  1.50s/it]  3%|▎         | 3/100 [00:01<00:43,  2.24it/s]  6%|▌         | 6/100 [00:01<00:19,  4.85it/s]  8%|▊         | 8/100 [00:02<00:15,  6.01it/s] 10%|█         | 10/100 [00:02<00:13,  6.45it/s] 12%|█▏        | 12/100 [00:02<00:11,  7.73it/s] 14%|█▍        | 14/100 [00:02<00:11,  7.75it/s] 19%|█▉        | 19/100 [00:02<00:06, 12.53it/s] 21%|██        | 21/100 [00:03<00:08,  9.24it/s] 23%|██▎       | 23/100 [00:03<00:07,  9.98it/s] 25%|██▌       | 25/100 [00:03<00:06, 11.23it/s] 28%|██▊       | 28/100 [00:03<00:06, 11.24it/s] 31%|███       | 31/100 [00:03<00:04, 14.03it/s] 33%|███▎      | 33/100 [00:04<00:04, 13.90it/s] 36%|███▌      | 36/100 [00:04<00:03, 16.39it/s] 38%|███▊      | 38/100 [00:04<00:04, 14.89it/s] 40%|████      | 40/100 [00:04<00:05, 11.44it/s] 43%|████▎     | 43/100 [00:04<00:04, 13.74it/s] 46%|████▌     | 46/100 [00:04<00:03, 14.79it/s] 51%|█████     | 51/100 [00:05<00:02, 20.59it/s] 54%|█████▍    | 54/100 [00:05<00:03, 14.23it/s] 57%|█████▋    | 57/100 [00:05<00:02, 16.58it/s] 62%|██████▏   | 62/100 [00:05<00:01, 22.36it/s] 67%|██████▋   | 67/100 [00:05<00:01, 22.78it/s] 70%|███████   | 70/100 [00:06<00:01, 23.00it/s] 73%|███████▎  | 73/100 [00:06<00:02, 12.57it/s] 76%|███████▌  | 76/100 [00:06<00:01, 13.71it/s] 83%|████████▎ | 83/100 [00:06<00:00, 21.77it/s] 87%|████████▋ | 87/100 [00:07<00:00, 22.03it/s] 90%|█████████ | 90/100 [00:07<00:00, 19.13it/s] 93%|█████████▎| 93/100 [00:07<00:00, 20.77it/s] 96%|█████████▌| 96/100 [00:07<00:00, 22.36it/s] 99%|█████████▉| 99/100 [00:07<00:00, 21.19it/s]100%|██████████| 100/100 [00:07<00:00, 13.10it/s]
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(APIServer pid=46850) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+(EngineCore pid=47119) WARNING:root:Duplicate op registration for aten.__and__
+(EngineCore pid=47119) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=47119) WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=47119) Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:04<01:12,  4.53s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:10<01:24,  5.62s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:17<01:23,  5.97s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:23<01:18,  6.07s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:29<01:14,  6.21s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:36<01:09,  6.28s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:43<01:03,  6.39s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:49<00:58,  6.47s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:56<00:52,  6.55s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  59% Completed | 10/17 [01:03<00:46,  6.66s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  65% Completed | 11/17 [01:10<00:40,  6.70s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  71% Completed | 12/17 [01:16<00:33,  6.69s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  76% Completed | 13/17 [01:22<00:26,  6.50s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  82% Completed | 14/17 [01:29<00:19,  6.47s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  88% Completed | 15/17 [01:35<00:12,  6.43s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards:  94% Completed | 16/17 [01:42<00:06,  6.49s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:46<00:00,  5.80s/it]
+(EngineCore pid=47119) Loading safetensors checkpoint shards: 100% Completed | 17/17 [01:46<00:00,  6.26s/it]
+(EngineCore pid=47119) 
+(EngineCore pid=47119) Process EngineCore:
+(EngineCore pid=47119) Traceback (most recent call last):
+(EngineCore pid=47119)   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=47119)     self.run()
+(EngineCore pid=47119)   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+(EngineCore pid=47119)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/v1/engine/core.py", line 1140, in run_engine_core
+(EngineCore pid=47119)     raise e
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/v1/engine/core.py", line 1110, in run_engine_core
+(EngineCore pid=47119)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=47119)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=47119)     return func(*args, **kwargs)
+(EngineCore pid=47119)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/v1/engine/core.py", line 876, in __init__
+(EngineCore pid=47119)     super().__init__(
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/v1/engine/core.py", line 128, in __init__
+(EngineCore pid=47119)     kv_cache_config = self._initialize_kv_caches(vllm_config)
+(EngineCore pid=47119)                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=47119)     return func(*args, **kwargs)
+(EngineCore pid=47119)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/v1/engine/core.py", line 283, in _initialize_kv_caches
+(EngineCore pid=47119)     self.model_executor.initialize_from_config(kv_cache_configs)
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/v1/executor/abstract.py", line 124, in initialize_from_config
+(EngineCore pid=47119)     compilation_times: list[CompilationTimes] = self.collective_rpc(
+(EngineCore pid=47119)                                                 ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/v1/executor/uniproc_executor.py", line 80, in collective_rpc
+(EngineCore pid=47119)     result = run_method(self.driver_worker, method, args, kwargs)
+(EngineCore pid=47119)              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=47119)   File "/workspace/vllm/vllm/v1/serial_utils.py", line 510, in run_method
+(EngineCore pid=47119)     return func(*args, **kwargs)
+(EngineCore pid=47119)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=47119)   File "/workspace/tpu_inference/tpu_inference/worker/tpu_worker.py", line 460, in compile_or_warm_up_model
+(EngineCore pid=47119)     self.model_runner.capture_model()
+(EngineCore pid=47119)   File "/workspace/tpu_inference/tpu_inference/runner/tpu_runner.py", line 668, in capture_model
+(EngineCore pid=47119)     self.compilation_manager.capture_model()
+(EngineCore pid=47119)   File "/workspace/tpu_inference/tpu_inference/runner/compilation_manager.py", line 123, in capture_model
+(EngineCore pid=47119)     self._precompile_structured_decoding()
+(EngineCore pid=47119)   File "/workspace/tpu_inference/tpu_inference/runner/compilation_manager.py", line 1022, in _precompile_structured_decoding
+(EngineCore pid=47119)     self._run_compilation(
+(EngineCore pid=47119)   File "/workspace/tpu_inference/tpu_inference/runner/compilation_manager.py", line 87, in _run_compilation
+(EngineCore pid=47119)     result = fn(*args, **call_kwargs)
+(EngineCore pid=47119)              ^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=47119) jax.errors.JaxRuntimeError: RESOURCE_EXHAUSTED: E0101: RuntimeProgramAllocationFailure:
+(EngineCore pid=47119) Error loading program 'jit_structured_decode_fn': Attempting to reserve 445.22M at the bottom of memory. That was not possible. There are 339.39M free, 0B reserved, and 339.39M reservable.
+(EngineCore pid=47119) See https://openxla.org/xla/errors/error_0101 for more details.: while running replica 0 and partition 0 of a replicated computation (other replicas may have failed as well).
+(EngineCore pid=47119) --------------------
+(EngineCore pid=47119) For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+(APIServer pid=46850) Traceback (most recent call last):
+(APIServer pid=46850)   File "/usr/local/bin/vllm", line 6, in <module>
+(APIServer pid=46850)     sys.exit(main())
+(APIServer pid=46850)              ^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/entrypoints/cli/main.py", line 92, in main
+(APIServer pid=46850)     args.dispatch_function(args)
+(APIServer pid=46850)   File "/workspace/vllm/vllm/entrypoints/cli/serve.py", line 122, in cmd
+(APIServer pid=46850)     uvloop.run(run_server(args))
+(APIServer pid=46850)   File "/usr/local/lib/python3.12/site-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=46850)     return __asyncio.run(
+(APIServer pid=46850)            ^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+(APIServer pid=46850)     return runner.run(main)
+(APIServer pid=46850)            ^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=46850)     return self._loop.run_until_complete(task)
+(APIServer pid=46850)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=46850)   File "/usr/local/lib/python3.12/site-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=46850)     return await main
+(APIServer pid=46850)            ^^^^^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/entrypoints/openai/api_server.py", line 678, in run_server
+(APIServer pid=46850)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=46850)   File "/workspace/vllm/vllm/entrypoints/openai/api_server.py", line 692, in run_server_worker
+(APIServer pid=46850)     async with build_async_engine_client(
+(APIServer pid=46850)                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/usr/local/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=46850)     return await anext(self.gen)
+(APIServer pid=46850)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/entrypoints/openai/api_server.py", line 100, in build_async_engine_client
+(APIServer pid=46850)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=46850)                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/usr/local/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=46850)     return await anext(self.gen)
+(APIServer pid=46850)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/entrypoints/openai/api_server.py", line 136, in build_async_engine_client_from_engine_args
+(APIServer pid=46850)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=46850)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/v1/engine/async_llm.py", line 217, in from_vllm_config
+(APIServer pid=46850)     return cls(
+(APIServer pid=46850)            ^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/v1/engine/async_llm.py", line 146, in __init__
+(APIServer pid=46850)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=46850)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=46850)     return func(*args, **kwargs)
+(APIServer pid=46850)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/v1/engine/core_client.py", line 130, in make_async_mp_client
+(APIServer pid=46850)     return AsyncMPClient(*client_args)
+(APIServer pid=46850)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=46850)     return func(*args, **kwargs)
+(APIServer pid=46850)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/workspace/vllm/vllm/v1/engine/core_client.py", line 900, in __init__
+(APIServer pid=46850)     super().__init__(
+(APIServer pid=46850)   File "/workspace/vllm/vllm/v1/engine/core_client.py", line 535, in __init__
+(APIServer pid=46850)     with launch_core_engines(
+(APIServer pid=46850)          ^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=46850)   File "/usr/local/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=46850)     next(self.gen)
+(APIServer pid=46850)   File "/workspace/vllm/vllm/v1/engine/utils.py", line 1119, in launch_core_engines
+(APIServer pid=46850)     wait_for_engine_startup(
+(APIServer pid=46850)   File "/workspace/vllm/vllm/v1/engine/utils.py", line 1178, in wait_for_engine_startup
+(APIServer pid=46850)     raise RuntimeError(
+(APIServer pid=46850) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=512-max_num_batched_tokens=8192-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=2.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.95-max_num_seqs=512-max_num_batched_tokens=8192-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=2.json
+Traceback (most recent call last):
+  File "/workspace/vllm/vllm/benchmarks/sweep/serve.py", line 501, in run_ctx
+    yield
+  File "/workspace/vllm/vllm/benchmarks/sweep/serve.py", line 514, in run_main
+[END BENCHMARK]
+[END SERVER]
+[BEGIN SERVER]
+Server overrides: {'gpu_memory_utilization': 0.98, 'max_num_seqs': 128, 'max_num_batched_tokens': 2048, 'max_model_len': 4096}
+Server command: ['vllm', 'serve', 'Qwen/Qwen3-32B', '--tensor-parallel-size', '8', '--dtype', 'bfloat16', '--host', '0.0.0.0', '--port', '8000', '--trust-remote-code', '--gpu-memory-utilization', '0.98', '--max-num-seqs', '128', '--max-num-batched-tokens', '2048', '--max-model-len', '4096']
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 0
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=0.json']
+    return run_combs(
+           ^^^^^^^^^^
+  File "/workspace/vllm/vllm/benchmarks/sweep/serve.py", line 268, in run_combs
+    with server_ctx(
+         ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 137, in __enter__
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=0.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 1
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=1.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=1.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 2
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=2.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=128-max_num_batched_tokens=2048-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=2.json
+[END BENCHMARK]
+[END SERVER]
+[BEGIN SERVER]
+Server overrides: {'gpu_memory_utilization': 0.98, 'max_num_seqs': 256, 'max_num_batched_tokens': 4096, 'max_model_len': 4096}
+    return next(self.gen)
+Server command: ['vllm', 'serve', 'Qwen/Qwen3-32B', '--tensor-parallel-size', '8', '--dtype', 'bfloat16', '--host', '0.0.0.0', '--port', '8000', '--trust-remote-code', '--gpu-memory-utilization', '0.98', '--max-num-seqs', '256', '--max-num-batched-tokens', '4096', '--max-model-len', '4096']
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 0
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=0.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=0.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 1
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=1.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=1.json
+[END BENCHMARK]
+[BEGIN BENCHMARK]
+Benchmark overrides: {'num_prompts': 100, 'request_rate': 16, 'dataset_name': 'random', 'input_len': 1000, 'output_len': 100}
+Run Number: 2
+Benchmark command: ['vllm', 'bench', 'serve', '--model', 'Qwen/Qwen3-32B', '--backend', 'vllm', '--endpoint', '/v1/completions', '--num-prompts', '100', '--request-rate', '16', '--dataset-name', 'random', '--input-len', '1000', '--output-len', '100', '--percentile-metrics', 'ttft,tpot,itl,e2el', '--save-result', '--result-dir', '/tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100', '--result-filename', 'run=2.json']
+Output file: /tmp/results/qwen3-v6e-sweep/SERVE--gpu_memory_utilization=0.98-max_num_seqs=256-max_num_batched_tokens=4096-max_model_len=4096-BENCH--num_prompts=100-request_rate=16-dataset_name=random-input_len=1000-output_len=100/run=2.json
+[END BENCHMARK]
+[END SERVER]
+[BEGIN SERVER]
+Server overrides: {'gpu_memory_utilization': 0.98, 'max_num_seqs': 512, 'max_num_batched_tokens': 8192, 'max_model_len': 4096}
+Server command: ['vllm', 'serve', 'Qwen/Qwen3-32B', '--tensor-parallel-size', '8', '--dtype', 'bfloat16', '--host', '0.0.0.0', '--port', '8000', '--trust-remote-code', '--gpu-memory-utilization', '0.98', '--max-num-seqs', '512', '--max-num-batched-tokens', '8192', '--max-model-len', '4096']
+           ^^^^^^^^^^^^^^
+  File "/workspace/vllm/vllm/benchmarks/sweep/serve.py", line 47, in run_server
+    server.wait_until_ready(timeout=server_ready_timeout)
+  File "/workspace/vllm/vllm/benchmarks/sweep/server.py", line 112, in wait_until_ready
+    raise RuntimeError(
+RuntimeError: Server process crashed with return code 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/vllm", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/workspace/vllm/vllm/entrypoints/cli/main.py", line 92, in main
+    args.dispatch_function(args)
+  File "/workspace/vllm/vllm/benchmarks/sweep/serve.py", line 530, in main
+    run_main(SweepServeArgs.from_cli_args(args))
+  File "/workspace/vllm/vllm/benchmarks/sweep/serve.py", line 513, in run_main
+    with args.run_ctx(experiment_dir):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/workspace/vllm/vllm/benchmarks/sweep/serve.py", line 504, in run_ctx
+    raise RuntimeError(
+RuntimeError: The script was terminated early. Use `--resume` to continue the script from its last checkpoint.
