@@ -46,6 +46,7 @@ spec:
         - "true"
         - "--server-ready-timeout"
         - "1200"
+        - "--resume"
         env:
         - name: HF_HOME
           value: /hf-cache
